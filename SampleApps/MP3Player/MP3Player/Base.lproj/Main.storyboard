@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N9o-DR-IfP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root Table View Controller-->
+        <scene sceneID="ZBy-Vw-a2T">
+            <objects>
+                <tableViewController id="N9o-DR-IfP" customClass="RootTableViewController" customModule="MP3Player" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NoU-mR-F1e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mp3Cell" rowHeight="71" id="BZg-8j-JlO" customClass="Mp3TableViewCell" customModule="MP3Player" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="71"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BZg-8j-JlO" id="KeG-GM-mEJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="70.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gj-cV-NCp">
+                                            <rect key="frame" x="5" y="2" width="300" height="66.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxB-wL-jJQ">
+                                            <rect key="frame" x="310" y="20.5" width="55" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="55" id="GdL-ma-qaE"/>
+                                                <constraint firstAttribute="height" constant="30" id="TqM-CD-aTI"/>
+                                            </constraints>
+                                            <state key="normal" image="Play"/>
+                                            <connections>
+                                                <action selector="startStopDown:" destination="BZg-8j-JlO" eventType="touchDown" id="mLL-VN-etO"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="0gj-cV-NCp" firstAttribute="centerY" secondItem="KeG-GM-mEJ" secondAttribute="centerY" id="37c-B4-1sW"/>
+                                        <constraint firstItem="qxB-wL-jJQ" firstAttribute="centerY" secondItem="KeG-GM-mEJ" secondAttribute="centerY" id="4XV-eh-gvu"/>
+                                        <constraint firstItem="qxB-wL-jJQ" firstAttribute="leading" secondItem="0gj-cV-NCp" secondAttribute="trailing" constant="5" id="N5u-u5-vVS"/>
+                                        <constraint firstAttribute="bottom" secondItem="0gj-cV-NCp" secondAttribute="bottom" constant="2" id="Pcg-DS-9B0"/>
+                                        <constraint firstItem="0gj-cV-NCp" firstAttribute="leading" secondItem="KeG-GM-mEJ" secondAttribute="leading" constant="5" id="aw2-gp-GYf"/>
+                                        <constraint firstAttribute="trailing" secondItem="qxB-wL-jJQ" secondAttribute="trailing" constant="10" id="c3f-zi-I6p"/>
+                                        <constraint firstItem="0gj-cV-NCp" firstAttribute="top" secondItem="KeG-GM-mEJ" secondAttribute="top" constant="2" id="cDW-Yq-EPR"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="songName" destination="0gj-cV-NCp" id="QgW-nv-e8d"/>
+                                    <outlet property="startStop" destination="qxB-wL-jJQ" id="aRi-r8-9C2"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="N9o-DR-IfP" id="AeM-ue-MvL"/>
+                            <outlet property="delegate" destination="N9o-DR-IfP" id="sym-9Q-l1j"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="riR-eA-kBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-202.40000000000001" y="85.907046476761622"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Play" width="32" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout_TwoPictures" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9PR-zS-TGJ" userLabel="Top View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="368"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteQueen" translatesAutoresizingMaskIntoConstraints="NO" id="o6u-fW-fv4">
+                                        <rect key="frame" x="177" y="154" width="60" height="60"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="o6u-fW-fv4" firstAttribute="centerY" secondItem="9PR-zS-TGJ" secondAttribute="centerY" id="9fn-75-dGV"/>
+                                    <constraint firstItem="o6u-fW-fv4" firstAttribute="centerX" secondItem="9PR-zS-TGJ" secondAttribute="centerX" id="aVX-1C-mXB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="snq-w8-hUz" userLabel="Bottom View">
+                                <rect key="frame" x="0.0" y="368" width="414" height="368"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlackQueen" translatesAutoresizingMaskIntoConstraints="NO" id="9ed-ef-RlA">
+                                        <rect key="frame" x="177" y="154" width="60" height="60"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="9ed-ef-RlA" firstAttribute="centerY" secondItem="snq-w8-hUz" secondAttribute="centerY" id="7lO-ke-VeM"/>
+                                    <constraint firstItem="9ed-ef-RlA" firstAttribute="centerX" secondItem="snq-w8-hUz" secondAttribute="centerX" id="bF8-V6-SWU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="snq-w8-hUz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6Di-PM-SQB"/>
+                            <constraint firstItem="9PR-zS-TGJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6G8-C8-Rm7"/>
+                            <constraint firstItem="snq-w8-hUz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9iA-0m-qD8"/>
+                            <constraint firstItem="snq-w8-hUz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Omf-rk-EGA"/>
+                            <constraint firstItem="9PR-zS-TGJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wdb-di-Ezg"/>
+                            <constraint firstItem="snq-w8-hUz" firstAttribute="height" secondItem="9PR-zS-TGJ" secondAttribute="height" id="YCh-Na-AS2"/>
+                            <constraint firstItem="9PR-zS-TGJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bi1-dh-hZ2"/>
+                            <constraint firstItem="snq-w8-hUz" firstAttribute="top" secondItem="9PR-zS-TGJ" secondAttribute="bottom" id="gGT-He-2YT"/>
+                            <constraint firstItem="snq-w8-hUz" firstAttribute="top" secondItem="9PR-zS-TGJ" secondAttribute="bottom" id="hlD-vd-dtt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.69565217391306"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BlackQueen" width="60" height="60"/>
+        <image name="WhiteQueen" width="60" height="60"/>
+    </resources>
+</document>

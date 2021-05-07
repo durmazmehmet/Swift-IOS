@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gwN-Ci-l4Q">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SeaFoodIBM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WELCOME" translatesAutoresizingMaskIntoConstraints="NO" id="LbL-HM-ahf">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="f6U-jv-QXB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T8M-nh-ZI9">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ps1-Uk-SQq">
+                                <rect key="frame" x="117" y="64" width="140" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="ao7-El-06S"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sc-Wl-5w3">
+                                <rect key="frame" x="67" y="522" width="240" height="74"/>
+                                <color key="backgroundColor" red="0.41502293944358826" green="0.95138055086135864" blue="0.94724148511886597" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <state key="normal" title="PAYLAŞ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="shareButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lgl-bG-d3e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ps1-Uk-SQq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0eg-A4-TNT"/>
+                            <constraint firstItem="LbL-HM-ahf" firstAttribute="centerX" secondItem="6sc-Wl-5w3" secondAttribute="centerX" id="2Rv-bg-l76"/>
+                            <constraint firstItem="T8M-nh-ZI9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2eI-sO-bZT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6sc-Wl-5w3" secondAttribute="bottom" constant="71" id="BR4-mi-F23"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T8M-nh-ZI9" secondAttribute="bottom" id="EcM-t1-DNw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ps1-Uk-SQq" secondAttribute="trailing" constant="118" id="F5z-Ww-wI1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T8M-nh-ZI9" secondAttribute="trailing" id="GZy-tc-OCp"/>
+                            <constraint firstItem="LbL-HM-ahf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M8F-7e-vgM"/>
+                            <constraint firstItem="LbL-HM-ahf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="OLA-Ba-Nal"/>
+                            <constraint firstItem="Ps1-Uk-SQq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Uz9-Vo-SWj"/>
+                            <constraint firstItem="Ps1-Uk-SQq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="Z9u-KG-HbB"/>
+                            <constraint firstItem="T8M-nh-ZI9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jWD-Ql-sqq"/>
+                            <constraint firstItem="LbL-HM-ahf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ztz-xJ-9jt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="48A-Ve-TFB">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="HOp-rU-TBv">
+                            <connections>
+                                <action selector="cameraTapped:" destination="BYZ-38-t0r" id="Whb-5d-3Fe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cameraButton" destination="HOp-rU-TBv" id="TBn-x2-ZSW"/>
+                        <outlet property="imageView" destination="T8M-nh-ZI9" id="PLY-Zm-cok"/>
+                        <outlet property="shareButton" destination="6sc-Wl-5w3" id="sQf-mI-3ea"/>
+                        <outlet property="topBar" destination="Ps1-Uk-SQq" id="ovE-OW-84f"/>
+                        <outlet property="welcomeHotdog" destination="LbL-HM-ahf" id="RMd-Tw-bR5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976.79999999999995" y="792.95352323838085"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aWp-mX-se4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gwN-Ci-l4Q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aLD-NV-Eit">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="0.99542158842086792" green="0.97766119241714478" blue="0.14966017007827759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nf6-vR-tQK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j2K-yt-ba7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352.80000000000001" y="792.95352323838085"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WELCOME" width="221" height="146"/>
+    </resources>
+</document>
